@@ -1,7 +1,7 @@
 baseURL = "https://ideacrew.com/"
 languageCode = "en-us"
 title = "IdeaCrew"
-publishDir = "../public"
+publishDir = "public"
 
 disableKinds = ["taxonomy", "term"]
 pluralizelisttitles = false
