@@ -36,7 +36,7 @@ export default defineConfig({
 				format: 'md',
 				label: 'Pages',
 				name: 'pages',
-				path: 'content/pages',
+				path: 'content',
 				match: {
 					include: '*',
 					exclude: '_index',
