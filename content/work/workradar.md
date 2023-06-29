@@ -5,8 +5,6 @@ summary: 'A modern tool to help companies safely return to the workplace during 
 title: 'WorkRadar'
 weight: 3
 featured_image: 'workradar-logo.png'
-quote: 'The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive.'
-quote_attribution: 'Mila Kofman, DCHBX Executive Director'
 ---
 
 The pandemic changed the world of work forever. Many businesses that could allow their employees to work remotely did. Many who made the abrupt shift to working from home may never need to return to the office again. Other essential businesses apart from healthcare facilities such as pharmacies, supermarkets, manufacturing, banks, schools and transportation hubs required their employees, students and customers to enter the workplace. COVID-19 was spreading. Testing was slow causing public contact tracing to be ineffective. Guidance from Federal, CDC and state level confusing. Decision making was being pushed down to individual businesses and their customers. Business leaders are having to make decisions that could dramatically affect the health and well-being of their employees. Now with a vaccine on the horizon and more businesses looking to gradually allow their employees safely to the workplace a solution is needed.

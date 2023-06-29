@@ -77,43 +77,7 @@ export function newsFields() {
 		},
 	] as TinaField[]
 }
-export function quoteFields() {
-	return [
-		{
-			type: 'string',
-			name: 'quoted_text',
-			label: 'Quoted Text',
-			ui: {
-				component: 'textarea',
-			},
-		},
-		{
-			type: 'string',
-			name: 'attribution',
-			label: 'Attribution',
-			required: true,
-		},
-		{
-			type: 'object',
-			list: true,
-			templateKey: 'template',
-			label: 'Not Sure',
-			name: 'not_sure',
-			templates: [
-				{
-					fields: workFields(),
-					label: 'Work',
-					name: 'work',
-				},
-				{
-					fields: quoteFields(),
-					label: 'quote',
-					name: 'quote',
-				},
-			],
-		},
-	] as TinaField[]
-}
+
 export function workFields() {
 	return [
 		{

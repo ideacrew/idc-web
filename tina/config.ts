@@ -1,7 +1,6 @@
 import { defineConfig } from 'tinacms'
 import { careerFields } from './templates'
 import { newsFields } from './templates'
-import { quoteFields } from './templates'
 import { workFields } from './templates'
 
 // Your hosting provider likely exposes this as an environment variable
@@ -25,38 +24,11 @@ export default defineConfig({
 	schema: {
 		collections: [
 			{
-				// Posts
-				format: 'md',
-				name: 'post',
-				label: 'Posts',
-				path: 'content/posts',
-				match: {
-					include: '**/*',
-					exclude: '_index',
-				},
-				fields: [
-					{
-						type: 'string',
-						name: 'title',
-						label: 'Title',
-						isTitle: true,
-						required: true,
-					},
-					{
-						type: 'rich-text',
-						name: 'body',
-						label: 'Body',
-						isBody: true,
-					},
-				],
-			},
-			{
 				// Pages
 				format: 'md',
 				label: 'Pages',
 				name: 'pages',
-				path: 'content',
-				frontmatterFormat: 'yaml',
+				path: 'content/pages',
 				match: {
 					include: '*',
 					exclude: '_index',
@@ -112,47 +84,28 @@ export default defineConfig({
 					...careerFields(),
 				],
 			},
-			// {
-			// 	format: 'md',
-			// 	label: 'Work',
-			// 	name: 'work',
-			// 	path: 'content/work',
-			// 	frontmatterFormat: 'yaml',
-			// 	match: {
-			// 		include: '*',
-			// 		exclude: '_index',
-			// 	},
-			// 	templates: [
-			// 		{
-			// 			fields: [
-			// 				{
-			// 					type: 'rich-text',
-			// 					name: 'body',
-			// 					label: 'Body of Document',
-			// 					description: 'This is the markdown body',
-			// 					isBody: true,
-			// 				},
-			// 				...quoteFields(),
-			// 			],
-			// 			label: 'quote',
-			// 			name: 'quote',
-			// 		},
-			// 		{
-			// 			fields: [
-			// 				{
-			// 					type: 'rich-text',
-			// 					name: 'body',
-			// 					label: 'Body of Document',
-			// 					description: 'This is the markdown body',
-			// 					isBody: true,
-			// 				},
-			// 				...workFields(),
-			// 			],
-			// 			label: 'work',
-			// 			name: 'work',
-			// 		},
-			// 	],
-			// },
+			{
+				// Work
+				format: 'md',
+				label: 'Work',
+				name: 'work',
+				path: 'content/work',
+				frontmatterFormat: 'yaml',
+				match: {
+					include: '*',
+					exclude: '_index',
+				},
+				fields: [
+					{
+						type: 'rich-text',
+						name: 'body',
+						label: 'Body of Document',
+						description: 'This is the markdown body',
+						isBody: true,
+					},
+					...workFields(),
+				],
+			},
 		],
 	},
 })
