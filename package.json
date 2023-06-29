@@ -6,7 +6,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "npx tinacms dev -c \"hugo server -D\"",
-		"start": "npm run dev"
+		"start": "npm run dev",
+		"build": "npx tinacms build && hugo --gc --minify"
 	},
 	"keywords": [],
 	"author": "",
