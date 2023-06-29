@@ -1,0 +1,15 @@
+baseURL = "https://ideacrew.com/"
+languageCode = "en-us"
+title = "IdeaCrew"
+publishDir = "../public"
+
+disableKinds = ["taxonomy", "term"]
+pluralizelisttitles = false
+enableRobotsTXT = true
+
+[params]
+  description = "Strategic Solutions for the IT Industry"
+  images = ["/images/ideacrew-full-logo-with-tagline.png", "/images/ideacrew-lightbulb-only.png"]
+  title = "IdeaCrew"
+
+

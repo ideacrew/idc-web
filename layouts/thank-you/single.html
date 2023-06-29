@@ -1,0 +1,14 @@
+{{ define "head-styles" }}
+{{ $pageCSS := "scss/thank-you.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p>
+  Thank you for your submission. We'll be in touch shortly!
+</p>
+{{ end }}

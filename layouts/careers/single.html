@@ -1,0 +1,96 @@
+{{ define "head-styles" }}
+{{ $pageCSS := "scss/careers/single.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>{{ $inlineCSS.Content | safeCSS }}</style>
+{{ end }}
+
+
+{{ define "main" }}
+{{ $jobType := dict "Full Time" "FULL_TIME" }}
+{{ $shortDate := dateFormat "2006-01-02" .Params.post_date }}
+
+<section class="career-heading">
+  <h1 class="career-title">{{ .Params.title }}</h1>
+  <div class="career-details">
+    <div class="subheading">{{ .Params.position_type }}</div>
+    <div class="location-list">{{ delimit .Params.location "/" }}</div>
+    <div class="posted-on">
+      Posted: <time datetime="{{ $shortDate }}">
+        {{ dateFormat "January 2, 2006" .Params.post_date }}
+      </time>
+    </div>
+  </div>
+  <a
+    class="heading-cta button primary"
+    target="_blank" rel="noopener noreferrer"
+    href="mailto:careers@ideacrew.com?subject=Apply%20for%20{{ .Params.title }}%20position&body=Hi%20there%2C%20I'd%20like%20to%20apply%20for%20the%20{{ .Params.title }}%20position.%20Please%20find%20my%20resume%20attached.%0D%0A%0D%0AWarmest%20regards%2C%0D%0A">
+    Apply Now
+  </a>
+  <div class="email-info">or send us an email at <a target="_blank" rel="noopener noreferrer" href="mailto:careers@ideacrew.com">careers@ideacrew.com</a></div>
+</section>
+<section>
+  <h2>Job Details</h2>
+  {{ .Content }}
+  <h3>Salary</h3>
+  <p>${{ .Params.base_salary }} to ${{ .Params.maximum_salary }} per year</p>
+</section>
+<section>
+  <a
+    class="apply-now button primary"
+    target="_blank" rel="noopener noreferrer"
+    href="mailto:careers@ideacrew.com?subject=Apply%20for%20{{ .Params.title }}%20position&body=Hi%20there%2C%20I'd%20like%20to%20apply%20for%20the%20{{ .Params.title }}%20position.%20Please%20find%20my%20resume%20attached.%0D%0A%0D%0AWarmest%20regards%2C%0D%0A">
+    Apply Now
+  </a>
+  <div class="email-info">or send us an email at <a target="_blank" rel="noopener noreferrer" href="mailto:careers@ideacrew.com">careers@ideacrew.com</a></div>
+</section>
+<section>
+  <h3>Equal Employment</h3>
+  <p class="fine-print"><em>IdeaCrew values a diverse workplace and is proud to be an equal opportunity workplace. IdeaCrew does not discriminate on the basis of race, religious creed, color, sex, gender identity, sexual orientation, age, non-disqualifying physical or mental disability, national origin, ancestry, veteran status, marital status, political affiliation,  or any other basis covered by appropriate law. All employment is decided on the basis of qualifications, merit, and business need.</em></p>
+</section>
+{{- end }}
+
+{{ define "schema" }}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "{{ .Params.title }}",
+    "description" : "<p>{{ .Params.summary }}</p>",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "IdeaCrew",
+      "sameAs": "https://ideacrew.com",
+      "logo": "https://ideacrew.com/images/ideacrew-full-logo-with-tagline.png"
+    },
+    "applicantLocationRequirements": {
+      "@type": "Country",
+      "name": "USA"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "addressCountry": "US"
+      }
+     },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "minValue": {{ lang.NumFmt 2 .Params.base_salary "- ." | safeJS }},
+        "maxValue": {{ lang.NumFmt 2 .Params.maximum_salary "- ." | safeJS }},
+        "unitText": "YEAR"
+      }
+    },
+    "jobLocationType": "TELECOMMUTE",
+    "employmentType": "{{ replace .Params.position_type " " "_" | upper }}",
+    "datePosted": "{{ dateFormat "2006-01-02" .Params.post_date }}",
+    "validThrough": "2022-04-01"
+  }
+</script>
+{{ end }}

@@ -1,0 +1,52 @@
+
+<link rel="preload" href="/fonts/domine.1.woff2" as="font" crossorigin />
+<link rel="preload" href="/fonts/DomineBold.1.woff2" as="font" crossorigin />
+<link rel="preload" href="/fonts/OpenSans-Bold.1.woff2" as="font" crossorigin />
+<link rel="preload" href="/fonts/OpenSans-Regular.1.woff2" as="font" crossorigin />
+
+{{ if eq hugo.Environment "production" }}
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://stats.g.doubleclick.net">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXRFF077XE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MXRFF077XE');
+</script>
+{{ end }}
+
+<!-- Load Critical CSS Inline -->
+{{ $applicationCSS := "styles.scss" }}
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $appInlineCSS := resources.Get $applicationCSS | resources.ToCSS $options }}
+<style>{{ $appInlineCSS.Content | safeCSS }}</style>
+
+<!-- Load Non-Critical Styles Asynchronously -->
+{{ $options := (dict "targetPath" "non-critical.css" "outputStyle" "compressed") }}
+{{ $nonCriticalCSS := resources.Get "non-critical.scss" | resources.ToCSS $options | resources.Fingerprint}}
+<link
+  rel="preload"
+  href="{{ $nonCriticalCSS.RelPermalink }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{ $nonCriticalCSS.RelPermalink }}">
+</noscript>
+
+<title>{{ .Title }}</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="description" content="{{ .Description | default .Summary }}">
+
+{{ if .Params.canonicalUrl }}
+<link rel="canonical" href="{{ .Params.canonicalUrl }}">
+{{ else }}
+<link rel="canonical" href="{{ .Permalink | absURL }}">
+{{ end }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
