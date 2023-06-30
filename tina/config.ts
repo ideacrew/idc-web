@@ -38,7 +38,7 @@ export default defineConfig({
 				name: 'pages',
 				path: 'content',
 				match: {
-					include: '**/*',
+					include: '*',
 					exclude: '_index',
 				},
 				fields: [
