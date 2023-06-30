@@ -6,6 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "npx tinacms dev -c \"hugo server -D\"",
+		"prestart": "netlify env:list --plain --context production > .env",
 		"start": "npm run dev",
 		"build": "npx tinacms build && hugo --gc --minify"
 	},
