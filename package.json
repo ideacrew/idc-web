@@ -1,23 +1,25 @@
 {
-	"name": "idc-web",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "npx tinacms dev -c \"hugo server -D\"",
-		"prestart": "netlify env:list --plain --context production > .env",
-		"start": "npm run dev",
-		"build": "npx tinacms build && hugo --gc --minify"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"@tinacms/cli": "^1.5.21",
-		"tinacms": "^1.5.12"
-	},
-	"devDependencies": {
-		"netlify-cli": "^15.7.0"
-	}
+  "name": "idc-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tinacms dev -c \"hugo server -D\"",
+    "prestart": "netlify env:list --plain --context production > .env",
+    "start": "npm run dev",
+    "build": "npx tinacms build && hugo --gc --minify",
+    "build:local": "npm run prestart && npx tinacms build && hugo --gc --minify",
+    "build:netlify": "npx netlify build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.21",
+    "tinacms": "^1.5.12"
+  },
+  "devDependencies": {
+    "netlify-cli": "^15.7.0"
+  }
 }

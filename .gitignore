@@ -1,5 +1,13 @@
 node_modules
 # Local Netlify folder
 .netlify
+
+# Public folder
 public
+
+# Secrets
 .env
+
+# Generated files
+resources/_gen
+static/admin/index.html
