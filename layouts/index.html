@@ -1,136 +1,128 @@
-{{ define "head-styles" }} {{ $options := (dict "outputStyle" "compressed") }} {{ $inlineCSS := resources.Get
-"scss/index.scss" | resources.ToCSS $options }}
+{{ define "head-styles" }} {{ $options := (dict "outputStyle" "compressed") }}
+{{ $inlineCSS := resources.Get "scss/index.scss" | resources.ToCSS $options }}
 <style>
-	{{ $inlineCSS.Content | safeCSS }}
+  {{ $inlineCSS.Content | safeCSS }}
 </style>
 {{ end }} {{ define "main" }}
 <section class="index-heading">
-	<h1 class="hero-heading">
-		Strategy & technology solutions that help our <br class="hero-break" />clients solve their most important challenges
-	</h1>
-	<div class="hero-cta">
-		<a
-			href="/contact/"
-			class="button outline"
-			>Get in Touch</a
-		>
-		<a
-			href="/state-based-marketplace/"
-			class="button primary"
-			>State-Based Marketplace</a
-		>
-	</div>
+  <h1 class="hero-heading">
+    Strategy & technology solutions that help our
+    <br class="hero-break" />clients solve their most important challenges
+  </h1>
+  <div class="hero-cta">
+    <a href="/contact/" class="button outline">Get in Touch</a>
+    <a href="/state-based-marketplace/" class="button primary"
+      >State-Based Marketplace</a
+    >
+  </div>
 </section>
 
 <section class="sbm-section">
-	<h2>State-Based Marketplace Solution</h2>
-	<ul class="sbm-item-list">
-		<li class="sbm-item">
-			<span>Individuals</span>
-			<div class="boxes">
-				<span class="box highlighted"></span>
-				<span class="box"></span>
-				<span class="box"></span>
-				<span class="box"></span>
-			</div>
-		</li>
-		<li class="sbm-item">
-			<span>Employers</span>
-			<div class="boxes">
-				<span class="box"></span>
-				<span class="box highlighted"></span>
-				<span class="box"></span>
-				<span class="box"></span>
-			</div>
-		</li>
-		<li class="sbm-item">
-			<span>Employees</span>
-			<div class="boxes">
-				<span class="box"></span>
-				<span class="box"></span>
-				<span class="box highlighted"></span>
-				<span class="box"></span>
-			</div>
-		</li>
-		<li class="sbm-item">
-			<span>Brokers</span>
-			<div class="boxes">
-				<span class="box"></span>
-				<span class="box"></span>
-				<span class="box"></span>
-				<span class="box highlighted"></span>
-			</div>
-		</li>
-	</ul>
-	<p>
-		IdeaCrew’s award winning State-based Marketplace (SBM) platform is a cloud-based, complete end-to-end ACA-compliant
-		solution for states, employers, employees and individuals to sponsor, shop and enroll in health insurance and other
-		benefits. Our platform’s modular, flexible design supports different marketplace needs from Individuals to small
-		business to large group enrollments.
-	</p>
-	<a href="/state-based-marketplace"> Learn More About Our State-Based Marketplace </a>
+  <h2>State-Based Marketplace Solution</h2>
+  <ul class="sbm-item-list">
+    <li class="sbm-item">
+      <span>Individuals</span>
+      <div class="boxes">
+        <span class="box highlighted"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+      </div>
+    </li>
+    <li class="sbm-item">
+      <span>Employers</span>
+      <div class="boxes">
+        <span class="box"></span>
+        <span class="box highlighted"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+      </div>
+    </li>
+    <li class="sbm-item">
+      <span>Employees</span>
+      <div class="boxes">
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box highlighted"></span>
+        <span class="box"></span>
+      </div>
+    </li>
+    <li class="sbm-item">
+      <span>Brokers</span>
+      <div class="boxes">
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box"></span>
+        <span class="box highlighted"></span>
+      </div>
+    </li>
+  </ul>
+  <p>
+    IdeaCrew’s award winning State-based Marketplace (SBM) platform is a
+    cloud-based, complete end-to-end ACA-compliant solution for states,
+    employers, employees and individuals to sponsor, shop and enroll in health
+    insurance and other benefits. Our platform’s modular, flexible design
+    supports different marketplace needs from Individuals to small business to
+    large group enrollments.
+  </p>
+  <a href="/state-based-marketplace">
+    Learn More About Our State-Based Marketplace
+  </a>
 </section>
 
 <section class="clients-section">
-	<h2 class="clients-section-heading">Our Clients</h2>
-	{{ partial "client-list" . }}
+  <h2 class="clients-section-heading">Our Clients</h2>
+  {{ partial "client-list" . }}
 </section>
 
 <section class="services-section">
-	<h2>Our Services</h2>
-	<ul class="services-list">
-		<li class="services-item">Management Consulting</li>
-		<li class="services-item">Application Development</li>
-		<li class="services-item">Data Integration</li>
-		<li class="services-item">DevOps & Cloud</li>
-	</ul>
-	<img
-		class="services-small"
-		src="/images/services-small.svg"
-		alt=""
-	/>
-	<img
-		class="services-large"
-		src="/images/services-large.svg"
-		alt=""
-	/>
-	<a href="/about/#services-section">Learn More About Our Services</a>
+  <h2>Our Services</h2>
+  <ul class="services-list">
+    <li class="services-item">Management Consulting</li>
+    <li class="services-item">Application Development</li>
+    <li class="services-item">Data Integration</li>
+    <li class="services-item">DevOps & Cloud</li>
+  </ul>
+  <img class="services-small" src="/images/services-small.svg" alt="" />
+  <img class="services-large" src="/images/services-large.svg" alt="" />
+  <a href="/about/#services-section">Learn More About Our Services</a>
 </section>
 
 <section class="recent-work-section">
-	<h2 class="work-section-heading">Our Work</h2>
-	<ul class="work-list">
-		{{ range first 4 (where .Site.RegularPages "Section" "work") }} {{ partial "work-item" . }} {{ end }}
-	</ul>
-	<div class="link-container">
-		<a href="/work/">View More of Our Work</a>
-	</div>
+  <h2 class="work-section-heading">Our Work</h2>
+  <ul class="work-list">
+    {{ range first 4 (where .Site.RegularPages "Section" "work") }} {{ partial
+    "work-item" . }} {{ end }}
+  </ul>
+  <div class="link-container">
+    <a href="/work/">View More of Our Work</a>
+  </div>
 </section>
-
-{{ end }} {{ define "cta" }} {{ partial "cta.html" . }} {{ end }} {{ define "schema" }}
+{{ end }} {{ define "cta" }} {{ partial "cta.html" . }} {{ end }} {{ define
+"schema" }}
 <script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Organization",
-		"address": {
-			"@type": "PostalAddress",
-			"addressLocality": "Washington",
-			"addressRegion": "District of Columbia",
-			"postalCode": "20036",
-			"streetAddress": "1150 Connecticut Ave NW #710"
-		},
-		"email": "info@ideacrew.com",
-		"name": "IdeaCrew",
-		"telephone": "(202) 688-3130",
-		"contactPoint": {
-			"@type": "ContactPoint",
-			"telephone": "+1-202-688-3130",
-			"contactType": "business inquiries"
-		},
-		"founder": {
-			"@type": "Person",
-			"name": "Dan Thomas"
-		}
-	}
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Washington",
+      "addressRegion": "District of Columbia",
+      "postalCode": "20036",
+      "streetAddress": "1150 Connecticut Ave NW #710"
+    },
+    "email": "info@ideacrew.com",
+    "name": "IdeaCrew",
+    "telephone": "(202) 688-3130",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-202-688-3130",
+      "contactType": "business inquiries"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Dan Thomas"
+    }
+  }
 </script>
 {{ end }}
