@@ -1,11 +1,11 @@
-{{ define "head-styles" }}
-{{ $pageCSS := "scss/404.scss" }}
-{{ $options := (dict "outputStyle" "compressed") }}
-{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
-<style>{{ $inlineCSS.Content | safeCSS }}</style>
-{{ end }}
+{{ define "head-styles" }} {{ $pageCSS := "scss/404.scss" }} {{ $options :=
+(dict "outputStyle" "compressed") }} {{ $inlineCSS := resources.Get $pageCSS |
+resources.ToCSS $options }}
 
-{{ define "main" }}
+<style>
+  {{ $inlineCSS.Content | safeCSS }}
+</style>
+{{ end }} {{ define "main" }}
 <h1>Page Not Found</h1>
 <p>I'm sorry, we couldn't find what you were looking for.</p>
 {{ end }}

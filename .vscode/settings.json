@@ -1,4 +1,5 @@
 {
 	"cSpell.words": ["CLIENTID", "prestart", "stopword", "tinacms"],
-	"svg.preview.background": "white"
+	"svg.preview.background": "white",
+	"html.validate.styles": false
 }
