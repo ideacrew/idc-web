@@ -27,10 +27,16 @@ Once you have an account, you will need to be added to the IDC team. Contact a t
 
 To mirror the Netlify build locally, you can run the following command: `npm run build:netlify`. This will allow you to quickly test the build locally before pushing to Netlify.
 
+## Making Changes
+
+Changes to the website should be done through feature branches and pull requests. The `trunk` branch is protected and requires a pull request to be merged.
+
+For each pull request, a preview build will be created and a link to the preview will be added to the pull request in GitHub. View the PR in GitHub to see the link.
+
+When the pull request is merged, the preview build will be removed and the app will be deployed to production.
+
 ## Deploying the App
 
 - The app deploys automatically to Netlify on every push to the `trunk` branch.
 
-- Pushes to the `trunk` branch will be guarded and require a pull request to be merged.
-- For each pull request, a preview build will be created and a link to the preview will be added to the pull request in GitHub.
 - When the pull request is merged, the preview build will be removed and the app will be deployed to production.
