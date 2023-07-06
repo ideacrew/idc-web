@@ -4,27 +4,17 @@
 
 ## Development
 
+- Install packages: `npm install`
+- Run the app: `npm start`
+
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en/) (v12.16.1)
 
-### Installation
+### Building the app locally
 
-```bash
-npm install
-```
-
-### Running the app
-
-```bash
-npm start
-```
-
-### Building the app
-
-```bash
-npm run build
-```
+- Install packages: `npm install`
+- Build the app: `npm run build`
 
 ### Running the tests
 
@@ -46,6 +36,6 @@ npm run format
 
 ### Deploying the app
 
-```bash
-npm run deploy
-```
+The app deploys automatically to Netlify on every push to the `trunk` branch.
+
+Pushes to the `trunk` branch will be guarded and require a pull request to be merged.
