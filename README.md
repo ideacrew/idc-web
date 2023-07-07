@@ -43,4 +43,4 @@ When the pull request is merged, the preview build will be removed and the app w
 
 ## Test Commit Area
 
-Testing a new commit
+Testing another new commit
