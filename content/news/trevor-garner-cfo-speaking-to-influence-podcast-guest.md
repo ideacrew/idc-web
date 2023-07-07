@@ -1,6 +1,6 @@
 ---
 title: "IdeaCrew's CFO, Trevor Garner guest on Speaking to Influence podcast"
-author: 'Mark Goho'
+author: "Mark Goho"
 publishdate: 2022-05-05T00:00:00Z
 ---
 

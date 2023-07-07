@@ -27,8 +27,8 @@
   grid-template-columns: repeat(2, max-content);
   grid-template-rows: repeat(2, max-content);
   grid-template-areas:
-    'logo company'
-    'logo copyright';
+    "logo company"
+    "logo copyright";
 }
 
 .footer-logo {

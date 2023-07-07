@@ -1,39 +1,43 @@
 {{ define "head-styles" }}
-{{ $pageCSS := "scss/work/single.scss" }}
-{{ $options := (dict "outputStyle" "compressed") }}
-{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
-<style>{{ $inlineCSS.Content | safeCSS }}</style>
+  {{ $pageCSS := "scss/work/single.scss" }}
+  {{ $options := (dict "outputStyle" "compressed") }}
+  {{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
+<style>
+  {{ $inlineCSS.Content | safeCSS }}
+</style>
 {{ end }}
 
 {{ define "main" }}
-<h1>{{ .Params.title }}</h1>
-<div class="work-summary">
-  {{ with .Params.problem }}
-  <div class="problem">
-    <h2>Challenge</h2>
-    <p>{{ . }}</p>
+  <h1>{{ .Params.title }}</h1>
+
+  <div class="work-summary">
+    {{ with .Params.problem }}
+      <div class="problem">
+        <h2>Challenge</h2>
+        <p>{{ . }}</p>
+      </div>
+    {{ end }}
+
+    {{ with .Params.solution }}
+      <div class="solution">
+        <h2>Solution</h2>
+        <p>{{ . }}</p>
+      </div>
+    {{ end }}
   </div>
+
+  <div class="work-content measure">{{ .Content }}</div>
+
+  {{ if isset .Params "quote" }}
+    <div class="quote">
+      <p class="quote-content">{{ . }}</p>
+
+      {{ if isset .Params "quote_attribution" }}
+        <div class="attribution">&mdash; {{ .Params.quote_attribution }}</div>
+      {{ end }}
+
+    </div>
   {{ end }}
-  {{ with .Params.solution }}
-  <div class="solution">
-    <h2>Solution</h2>
-    <p>{{ . }}</p>
-  </div>
-  {{ end }}
-</div>
-<div class="work-content measure">
-  {{ .Content }}
-</div>
-{{ with .Params.quote }}
-<div class="quote">
-  <p class="quote-content">
-    {{ . }}
-  </p>
-{{ end }}
-  {{ with .Params.quote_attribution }}
-  <div class="attribution">&mdash; {{ . }}</div>
-  {{ end }}
-</div>
 {{ end }}
 
 {{ define "cta" }}

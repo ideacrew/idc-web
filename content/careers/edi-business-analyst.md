@@ -1,11 +1,11 @@
 ---
 base_salary: 75000
-location: ['Washington, DC']
+location: ["Washington, DC"]
 maximum_salary: 140000
-position_type: 'Full Time'
+position_type: "Full Time"
 post_date: 2022-02-18T00:00:00Z
-summary: 'IdeaCrew is currently seeking an experienced Business Analyst with EDI expertise to help support our fast-paced, growing team.'
-title: 'EDI Business Analyst'
+summary: "IdeaCrew is currently seeking an experienced Business Analyst with EDI expertise to help support our fast-paced, growing team."
+title: "EDI Business Analyst"
 ---
 
 IdeaCrew is currently seeking an experienced Business Analyst with EDI expertise to help support our fast-paced, growing State-based Marketplace (SBM) team. This individual will engage with cross-functional teams to manage the progression of critical activities, deliverables, resources, and timelines in connection with deployment and operations of key components of our technology platform SBMs.

@@ -11,7 +11,7 @@ quote: >-
   model, while 37% of total members are now in a choice model. The IdeaCrew
   platform features and its ease of use have allowed the Health Connector for
   Business program to flourish.
-quote_attribution: 'Louis Gutierrez, CCA Executive Director'
+quote_attribution: "Louis Gutierrez, CCA Executive Director"
 solution: >-
   IdeaCrew successfully implemented its fully configured SHOP platform including
   Broker, Employer, Employee and Admin portals in 5 months, and enrollments have
@@ -27,10 +27,10 @@ IdeaCrew has provided health benefit and marketplace solutions to the Massachuse
 
 After two failed procurements the Connector looked at the technology being used in the District of Columbia, the most successful small business health options (SHOP) program being operated in the country. IdeaCrew engaged both Massachusetts and D.C. Health Benefit Exchanges to launch a state partnership enabling the Connector to share the small business platform and call center.
 
-* Successfully implemented a fully configured SHOP platform including Broker, Employer, Employee & Admin portals in 5 months
-* Seamlessly converted all small businesses to the new platform in the middle of their plan years, without resetting any accumulators with the carriers (such as deductibles).
-* Worked with brokers to implement new quoting and appointment tools to help more customers enroll
-* Implemented flexible EDI integration that minimized changes required by carriers
-* Project managed both the agile implementation and diverse stakeholder engagement
+- Successfully implemented a fully configured SHOP platform including Broker, Employer, Employee & Admin portals in 5 months
+- Seamlessly converted all small businesses to the new platform in the middle of their plan years, without resetting any accumulators with the carriers (such as deductibles).
+- Worked with brokers to implement new quoting and appointment tools to help more customers enroll
+- Implemented flexible EDI integration that minimized changes required by carriers
+- Project managed both the agile implementation and diverse stakeholder engagement
 
 This successful implementation including carrier and broker onboarding resulted in immediate growth. Since its relaunch Massachusetts SHOP was the fastest growing in the country> Membership has increased 90% from 4,500 to over 8,000 members in two years. In a customer survey, 88% of Massachusetts employers would recommend IdeaCrew’s platform to others. The shared services model has resulted in significant financial savings for both Massachusetts and the District of Columbia. Ongoing operations and maintenance costs are divided between the two states based on percentage of enrollment resulting in further cost savings. We are extremely proud to be part of the Massachusetts Connector’s success to date and plans for future growth.
