@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
-
   <head>
-    <meta charset="utf-8">
-    {{ partial "head.html" .}}
+    <meta charset="utf-8" />
+    {{ partial "head.html" . }}
 
     {{- block "head-scripts" . -}}
     {{- end -}}
@@ -16,19 +15,22 @@
     <a href="#main-content" class="skip-to-content-link">Skip Content</a>
     {{ partial "header.html" . }}
 
+
     <main
       id="main-content"
-      class="{{ with .Page.Section }}{{ . }}-section {{ end }} {{ .Page.Title | urlize }}-page">
-    {{ block "main" . }}{{ end }}
+      class="{{ with .Page.Section }}
+        {{ . }}-section
+      {{ end }} {{ .Page.Title | urlize }}-page">
+      {{ block "main" . }}{{ end }}
     </main>
 
     {{ block "cta" . }}{{ end }}
 
     {{ block "footer" . }}
-     {{ partial "footer.html" . }}
+      {{ partial "footer.html" . }}
     {{ end }}
 
-    {{ $opts := dict "targetPath" "main.js"  }}
+    {{ $opts := dict "targetPath" "main.js" }}
     {{ $built := resources.Get "ts/menu.ts" | js.Build $opts | resources.Minify | resources.Fingerprint }}
     <script
       type="text/javascript"
@@ -38,10 +40,7 @@
     {{ block "page-scripts" . }}
     {{ end }}
 
-    {{ block "schema" .}}
+    {{ block "schema" . }}
     {{ end }}
   </body>
 </html>
-
-
-

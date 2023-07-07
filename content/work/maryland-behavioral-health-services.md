@@ -1,9 +1,10 @@
 ---
-problem: 'Maryland Behavioral Health Administration was struggling to achieve consistent, high-quality, inpatient care in the state’s five psychiatric hospitals.'
-solution: 'IdeaCrew helped Maryland implement a single system of high-quality psychiatric hospital care to improve overall quality of care across the state.'
-summary: 'Our consulting improved the quality of care in the State’s five psychiatric hospitals'
-title: 'Maryland Behavioral Health Services'
-featured_image: 'maryland-department-health.png'
+problem: "Maryland Behavioral Health Administration was struggling to achieve consistent, high-quality, inpatient care in the state’s five psychiatric hospitals."
+solution: "IdeaCrew helped Maryland implement a single system of high-quality psychiatric hospital care to improve overall quality of care across the state."
+summary: "Our consulting improved the quality of care in the State’s five psychiatric hospitals"
+title: "Maryland Behavioral Health Services"
+featured_image: "maryland-department-health.png"
+quote_attribution: ""
 ---
 
 The State of Maryland, Department of Health, Behavioral Health Administration needed to create a system of care that provided consistent, high-quality inpatient psychiatric care in all state psychiatric hospitals as part of achieving its goals.

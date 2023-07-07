@@ -1,9 +1,10 @@
 ---
-problem: 'Pennsylvania Department of Human Services as a result of a legal settlement were required to improve the transfer and treatment of individuals in state psychiatric hospitals.'
-solution: 'IdeaCrew delivered a Competency Evaluation and Treatment Guide that significantly reduced transfer and treatment of individuals including criminal defendants in county prisons restoring them to competency.'
-summary: 'Clinical consulting reduced wait times for defendants to receive state psychiatric treatment'
-title: 'Pennsylvania Department of Human Services'
-featured_image: 'pennsylvania-department-human-services.png'
+problem: "Pennsylvania Department of Human Services as a result of a legal settlement were required to improve the transfer and treatment of individuals in state psychiatric hospitals."
+solution: "IdeaCrew delivered a Competency Evaluation and Treatment Guide that significantly reduced transfer and treatment of individuals including criminal defendants in county prisons restoring them to competency."
+summary: "Clinical consulting reduced wait times for defendants to receive state psychiatric treatment"
+title: "Pennsylvania Department of Human Services"
+featured_image: "pennsylvania-department-human-services.png"
+quote_attribution: ""
 ---
 
 Criminal defendants in Pennsylvania routinely wait months, sometimes years, in county prisons before being transferred to state psychiatric hospitals for treatment to restore them to competency. That was the lawsuit by the American Civil Liberties Union (ACLU) against the Commonwealth of Pennsylvania (PA).

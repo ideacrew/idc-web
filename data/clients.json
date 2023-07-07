@@ -1,62 +1,62 @@
 [
-	{
-		"client": "CoverME.gov",
-		"image": "coverme-wide.jpg"
-	},
-	{
-		"client": "DC Health Link",
-		"image": "dc-healthlink-logo.png"
-	},
-	{
-		"client": "MA Health Connector",
-		"image": "massachusetts-health-connector.jpg"
-	},
-	{
-		"client": "Washington DC Department of Behavioral Health",
-		"image": "dc-dept-behavioral-health-logo.png"
-	},
-	{
-		"client": "Connect for Health Colorado",
-		"image": "connect-health-colorado.png"
-	},
-	{
-		"client": "Department of Defense Education Activity",
-		"image": "dodea.png"
-	},
-	{
-		"client": "District of Columbia Government",
-		"image": "dc-gov.png"
-	},
-	{
-		"client": "Vermont Health Connect",
-		"image": "vermont-health-connect.png"
-	},
-	{
-		"client": "State Health & Value Strategies",
-		"image": "state-health-value-strategies.png"
-	},
-	{
-		"client": "Pennsylvania Department of Human Services",
-		"image": "pennsylvania-department-human-services.png"
-	},
-	{
-		"client": "Maryland Department of Health",
-		"image": "maryland-department-health.png"
-	},
-	{
-		"client": "FEMA",
-		"image": "fema.png"
-	},
-	{
-		"client": "Robert Wood Johnson Foundation",
-		"image": "robert-wood-johnson-foundation.png"
-	},
-	{
-		"client": "Montgomery County, MD",
-		"image": "montgomery-county-maryland.png"
-	},
-	{
-		"client": "Regional Addiction Prevention, Inc.",
-		"image": "RAP-logo.png"
-	}
+  {
+    "client": "CoverME.gov",
+    "image": "coverme-wide.jpg"
+  },
+  {
+    "client": "DC Health Link",
+    "image": "dc-healthlink-logo.png"
+  },
+  {
+    "client": "MA Health Connector",
+    "image": "massachusetts-health-connector.jpg"
+  },
+  {
+    "client": "Washington DC Department of Behavioral Health",
+    "image": "dc-dept-behavioral-health-logo.png"
+  },
+  {
+    "client": "Connect for Health Colorado",
+    "image": "connect-health-colorado.png"
+  },
+  {
+    "client": "Department of Defense Education Activity",
+    "image": "dodea.png"
+  },
+  {
+    "client": "District of Columbia Government",
+    "image": "dc-gov.png"
+  },
+  {
+    "client": "Vermont Health Connect",
+    "image": "vermont-health-connect.png"
+  },
+  {
+    "client": "State Health & Value Strategies",
+    "image": "state-health-value-strategies.png"
+  },
+  {
+    "client": "Pennsylvania Department of Human Services",
+    "image": "pennsylvania-department-human-services.png"
+  },
+  {
+    "client": "Maryland Department of Health",
+    "image": "maryland-department-health.png"
+  },
+  {
+    "client": "FEMA",
+    "image": "fema.png"
+  },
+  {
+    "client": "Robert Wood Johnson Foundation",
+    "image": "robert-wood-johnson-foundation.png"
+  },
+  {
+    "client": "Montgomery County, MD",
+    "image": "montgomery-county-maryland.png"
+  },
+  {
+    "client": "Regional Addiction Prevention, Inc.",
+    "image": "RAP-logo.png"
+  }
 ]

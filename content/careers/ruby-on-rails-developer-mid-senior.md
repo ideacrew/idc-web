@@ -1,11 +1,11 @@
 ---
 base_salary: 70000
-location: ['Washington, DC', 'Remote']
+location: ["Washington, DC", "Remote"]
 maximum_salary: 150000
-position_type: 'Full Time'
+position_type: "Full Time"
 post_date: 2022-02-12T00:00:00Z
-summary: 'IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team.'
-title: 'Ruby on Rails Developer (mid, senior)'
+summary: "IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team."
+title: "Ruby on Rails Developer (mid, senior)"
 ---
 
 IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team as we disrupt healthcare technology.

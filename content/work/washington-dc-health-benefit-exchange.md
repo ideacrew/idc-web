@@ -1,13 +1,16 @@
 ---
-problem: 'The District of Columbia’s expensive commercial-off-the-shelf (COTS) software failed after implementation during its first renewal period in 2014.'
-solution: 'IdeaCrew re-implemented the District’s state-based marketplace using open standards and cloud technology to quickly become one of the leading and most financially sustainable platforms in the nation.'
-quote: 'The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive.'
-quote_attribution: 'Mila Kofman, DCHBX Executive Director'
-summary: 'Our health insurance exchange platform delights individuals, small businesses, and members of congress'
-title: 'Washington DC Health Benefit Exchange'
+problem: "The District of Columbia’s expensive commercial-off-the-shelf (COTS) software failed after implementation during its first renewal period in 2014."
+solution: "IdeaCrew re-implemented the District’s state-based marketplace using open standards and cloud technology to quickly become one of the leading and most financially sustainable platforms in the nation."
+quote: "The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive."
+quote_attribution: "Mila Kofman, DCHBX Executive Director"
+summary: "Our health insurance exchange platform delights individuals, small businesses, and members of congress"
+title: "Washington DC Health Benefit Exchange"
 weight: 1
-featured_image: 'dc-healthlink.png'
-images: ['https://res.cloudinary.com/ideacrew/image/upload/c_scale,f_auto,q_auto,w_1200/v1605286962/ideacrew-website/dc-healthlink.png']
+featured_image: "dc-healthlink.png"
+images:
+  [
+    "https://res.cloudinary.com/ideacrew/image/upload/c_scale,f_auto,q_auto,w_1200/v1605286962/ideacrew-website/dc-healthlink.png",
+  ]
 ---
 
 IdeaCrew has provided health benefit and marketplace solutions to the District of Columbia since 2014. The District of Columbia Health Benefit Exchange Authority (HBX) launched its state-based marketplace in 2013. The District had invested in expensive commercial-off-the-shelf (COTS) software products and reputable systems integrator to deliver its new marketplace. The stakes were high to implement something that had not been implemented before. DC Health Link, the District’s new health insurance marketplace, launched on time in October 2013. On the surface the launch was successful. Individuals and households in the District were getting health coverage and Federal subsidies for the first time. There were problems brewing. Behind the scenes the new expensive software and its costlier integration was failing. Transactions were getting lost. Data was out of sync. Wheels were spinning as online customers experienced slow website performance and crashes. Calls into the call center were mounting.

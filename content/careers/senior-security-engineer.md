@@ -1,11 +1,11 @@
 ---
 base_salary: 100000
-location: ['Remote-US', 'Washington, DC']
+location: ["Remote-US", "Washington, DC"]
 maximum_salary: 165000
-position_type: 'Full Time'
+position_type: "Full Time"
 post_date: 2022-02-18T00:00:00Z
 summary: "IdeaCrew is currently seeking a talented and experienced Senior Security Engineer to build and evolve IdeaCrew’s Security Practice.  \n\n\n\n"
-title: 'Senior Security Engineer'
+title: "Senior Security Engineer"
 draft: true
 ---
 

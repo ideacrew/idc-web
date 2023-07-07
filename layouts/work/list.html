@@ -1,23 +1,22 @@
 {{ define "head-styles" }}
-{{ $pageCSS := "scss/work/list.scss" }}
-{{ $options := (dict "outputStyle" "compressed") }}
-{{ $inlineCSS := resources.Get $pageCSS | resources.ToCSS $options }}
-<style>{{ $inlineCSS.Content | safeCSS }}</style>
+  {{ $pageCSS := "scss/work/list.scss" }}
+  {{ $options
+    := (dict "outputStyle" "compressed")
+  }}
+  {{ $inlineCSS := resources.Get $pageCSS
+    | resources.ToCSS $options
+  }}
+<style>
+  {{ $inlineCSS.Content | safeCSS }}
+</style>
 {{ end }}
-
-
 {{ define "main" }}
-<section>
-  <h1>Our Work</h1>
-  {{ .Content }}
-  <ul class="work-list">
-    {{ range .Pages }}
-    {{ partial "work-item" . }}
-    {{ end }}
-  </ul>
-</section>
+  <section>
+    <h1>Our Work</h1>
+    {{ .Content }}
+    <ul class="work-list">
+      {{ range .Pages }}{{ partial "work-item" . }}{{ end }}
+    </ul>
+  </section>
 {{ end }}
-
-{{ define "cta" }}
-{{ partial "cta.html" . }}
-{{ end }}
+{{ define "cta" }}{{ partial "cta.html" . }}{{ end }}
