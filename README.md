@@ -40,3 +40,7 @@ When the pull request is merged, the preview build will be removed and the app w
 - The app deploys automatically to Netlify on every push to the `trunk` branch.
 
 - When the pull request is merged, the preview build will be removed and the app will be deployed to production.
+
+## Test Commit Area
+
+Testing a new commit
