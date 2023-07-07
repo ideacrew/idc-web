@@ -1,4 +1,4 @@
-# IdeaCrew Company Website
+# IdeaCrew Corporate Website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7e81fc76-3451-4354-a2cb-cb0df0e522e8/deploy-status)](https://app.netlify.com/sites/idc-web/deploys)
 
@@ -40,7 +40,3 @@ When the pull request is merged, the preview build will be removed and the app w
 - The app deploys automatically to Netlify on every push to the `trunk` branch.
 
 - When the pull request is merged, the preview build will be removed and the app will be deployed to production.
-
-## Test Commit Area
-
-Testing another and another new commit
