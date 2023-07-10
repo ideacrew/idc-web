@@ -1,11 +1,11 @@
 ---
 base_salary: 70000
-location: ['Washington, DC', 'Remote']
+location: ["Washington, DC", "Remote"]
 maximum_salary: 130000
-position_type: 'Full Time'
+position_type: "Full Time"
 post_date: 2022-02-12T00:00:00Z
-summary: 'IdeaCrew is currently seeking senior and mid-level Quality Assurance Testers to join our innovative, hard-working team.'
-title: 'QA Engineer'
+summary: "IdeaCrew is currently seeking senior and mid-level Quality Assurance Testers to join our innovative, hard-working team."
+title: "QA Engineer"
 ---
 
 IdeaCrew is currently seeking senior and mid-level Quality Assurance Testers to join our innovative, hard-working team as we disrupt healthcare technology. As a member of our crew you will have the opportunity to work closely with like-minded professionals in a fast-paced, engaging, professional environment.

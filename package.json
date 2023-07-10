@@ -20,6 +20,8 @@
     "tinacms": "^1.5.13"
   },
   "devDependencies": {
-    "netlify-cli": "^15.8.1"
+    "netlify-cli": "^15.8.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-go-template": "^0.0.13"
   }
 }
