@@ -30,7 +30,7 @@
 
   {{ if isset .Params "quote" }}
     <div class="quote">
-      <p class="quote-content">{{ . }}</p>
+      <p class="quote-content">{{ .Params.quote }}</p>
 
       {{ if isset .Params "quote_attribution" }}
         <div class="attribution">&mdash; {{ .Params.quote_attribution }}</div>
