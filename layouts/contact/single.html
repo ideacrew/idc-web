@@ -24,12 +24,13 @@
 
     <div class="input-group">
       <label for="contact-name">Your name</label>
-      <input type="text" name="contact-name" id="contact-name" />
+      <input required type="text" name="contact-name" id="contact-name" />
     </div>
 
     <div class="input-group">
       <label for="contact-email">Your email</label>
       <input
+        required
         type="email"
         inputmode="email"
         name="contact-email"
@@ -46,6 +47,7 @@
         >Let us know what you're looking for and how we can help</label
       >
       <textarea
+        required
         name="contact-message"
         id="contact-message"
         cols="30"></textarea>
