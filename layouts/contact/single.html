@@ -1,9 +1,3 @@
-{{ define "head-scripts" }}
-  {{ if eq hugo.Environment "production" }}
-    <script src="https://www.google.com/recaptcha/api.js?render=6LezZ98ZAAAAAP9dauh0WuNerMeRvRzhuP83rbL6"></script>
-  {{ end }}
-{{ end }}
-
 {{ define "head-styles" }}
   {{ $pageCSS :=
     "scss/contact.scss"
@@ -18,7 +12,12 @@
 {{ define "main" }}
   <h1>Contact Us</h1>
 
-  <form class="contact-form submitting" netlify>
+  <form
+    class="contact-form submitting"
+    name="contact-form"
+    action="/thank-you"
+    netlify>
+    <input type="hidden" name="subject" value="Contact Form Submission" />
     <div class="input-group">
       <label for="contact-name">Your name</label>
       <input type="text" name="contact-name" id="contact-name" />
@@ -44,7 +43,7 @@
         id="contact-message"
         cols="30"></textarea>
     </div>
-    <button disabled class="submit-button" type="button">Send message</button>
+    <button class="submit-button" type="button">Send message</button>
   </form>
 
   <div class="map"></div>
@@ -52,7 +51,7 @@
   <div class="contact-info">
     <div class="label-heading">Email</div>
     <a href="mailto:info@ideacrew.com">info@ideacrew.com</a>
-    <div class="label-heading" v>Phone</div>
+    <div class="label-heading">Phone</div>
     <a href="tel:202-688-3130">202-688-3130</a>
     <div class="label-heading">Address</div>
     <a href="https://g.page/IdeaCrew?share"
@@ -300,17 +299,4 @@
         fill="#FFBE55" />
     </svg>
   </div>
-{{ end }}
-
-{{ define "page-scripts" }}
-  {{ if eq hugo.Environment "production" }}
-    {{ $opts := dict "targetPath" "contact.js" }}
-    {{ $built := resources.Get
-      "ts/contact.ts" | js.Build $opts | resources.Minify | resources.Fingerprint
-    }}
-    <script
-      type="text/javascript"
-      src="{{ $built.RelPermalink }}"
-      defer></script>
-  {{ end }}
 {{ end }}
