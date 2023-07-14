@@ -28,6 +28,10 @@
 }
 
 .menu-button {
+  display: grid;
+  align-items: center;
+  height: 32px;
+  width: 32px;
   border: 1px solid var(--secondary-blue);
   border-radius: 0.28em;
   background: transparent;
