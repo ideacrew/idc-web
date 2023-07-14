@@ -8,7 +8,9 @@
       <h3 class="award-title">
         <a
           class="award-link"
-          href="{{ .external_link }}"
+          {{ with .external_link }}
+            href="{{ . }}"
+          {{ end }}
           target="__blank"
           rel="noopener noreferrer">
           {{ .title }}
