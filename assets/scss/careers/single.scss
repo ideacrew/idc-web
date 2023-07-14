@@ -31,6 +31,12 @@
   font-size: 0.75rem;
 }
 
+main section + section {
+  // This is a deviation from global styles
+  // assets/scss/layout.scss line 41
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 769px) {
   .career-heading {
     .career-title {
