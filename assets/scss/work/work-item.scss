@@ -23,11 +23,11 @@
 
 .work-title {
   margin: 0;
-  font-size: 0.667rem;
+  font-size: 14px;
 }
 
 .work-summary {
-  font-size: 0.556rem;
+  font-size: 0.78rem;
   grid-column: 2 / 3;
 }
 
@@ -79,7 +79,7 @@
   }
 
   .work-summary {
-    font-size: 0.78rem;
+    font-size: 14px;
     grid-column: unset;
   }
 }
