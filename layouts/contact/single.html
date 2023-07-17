@@ -16,11 +16,17 @@
     class="contact-form submitting"
     name="contact-form"
     action="/thank-you"
+    netlify-honeypot="website-name"
     netlify>
     <input
       type="hidden"
       name="subject"
       value="Contact Form Submission (%{submissionId})" />
+
+    <div class="input-group visually-hidden">
+      <label for="website-name">What is your website name?</label>
+      <input type="text" name="website-name" />
+    </div>
 
     <div class="input-group">
       <label for="contact-name">Your name</label>
