@@ -36,8 +36,15 @@
   }
 
   .details-container {
+    display: grid;
     column-gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 0.5rem;
+
+    @media screen and (max-width: 769px) {
+      display: block;
+      margin-top: 0;
+    }
 
     p {
       grid-column: 1 / 4;
@@ -49,8 +56,9 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: start;
+    gap: 4px;
+    flex-flow: row wrap;
   }
 }
 
@@ -71,15 +79,4 @@
   float: right;
   border: 0;
   background-color: transparent;
-}
-
-@media screen and (min-width: 769px) {
-  .details-container {
-    display: grid;
-    margin-top: 0.5rem;
-  }
-
-  .benefits-modules .supplemental-information {
-    display: block;
-  }
 }
