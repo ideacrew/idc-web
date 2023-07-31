@@ -20,6 +20,10 @@
   height: auto;
   padding: 0.5rem;
   filter: grayscale(1);
+
+  &.oversized {
+    scale: 60%;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -32,5 +36,9 @@
   .client-image {
     width: auto;
     padding: 0;
+
+    .oversized {
+      scale: 75%;
+    }
   }
 }

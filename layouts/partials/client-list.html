@@ -2,7 +2,7 @@
   {{ range .Site.Data.clients }}
     <li class="client-tile">
       <img
-        class="client-image"
+        class="client-image {{ .class }}"
         loading="lazy"
         src="https://res.cloudinary.com/ideacrew/image/upload/c_lpad,q_auto,f_auto,h_150,w_150/v1/ideacrew-website/{{ .image }}"
         alt="{{ .client }} logo"

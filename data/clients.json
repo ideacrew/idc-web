@@ -1,62 +1,77 @@
 [
   {
     "client": "CoverME.gov",
-    "image": "coverme-wide.jpg"
+    "image": "coverme-wide.jpg",
+    "class": ""
   },
   {
     "client": "DC Health Link",
-    "image": "dc-healthlink-logo.png"
+    "image": "dc-healthlink-logo.png",
+    "class": ""
   },
   {
     "client": "MA Health Connector",
-    "image": "massachusetts-health-connector.jpg"
+    "image": "massachusetts-health-connector.jpg",
+    "class": ""
   },
   {
     "client": "Washington DC Department of Behavioral Health",
-    "image": "dc-dept-behavioral-health-logo.png"
+    "image": "dc-dept-behavioral-health-logo.png",
+    "class": ""
   },
   {
     "client": "Connect for Health Colorado",
-    "image": "connect-health-colorado.png"
+    "image": "connect-health-colorado.png",
+    "class": ""
   },
   {
     "client": "Department of Defense Education Activity",
-    "image": "dodea.png"
+    "image": "dodea.png",
+    "class": ""
   },
   {
     "client": "District of Columbia Government",
-    "image": "dc-gov.png"
+    "image": "dc-gov.png",
+    "class": ""
   },
   {
     "client": "Vermont Health Connect",
-    "image": "vermont-health-connect.png"
+    "image": "vermont-health-connect.png",
+    "class": ""
   },
   {
     "client": "State Health & Value Strategies",
-    "image": "state-health-value-strategies.png"
+    "image": "state-health-value-strategies.png",
+    "class": ""
   },
   {
     "client": "Pennsylvania Department of Human Services",
-    "image": "pennsylvania-department-human-services.png"
+    "image": "pennsylvania-department-human-services.png",
+    "class": ""
   },
   {
     "client": "Maryland Department of Health",
-    "image": "maryland-department-health.png"
+    "image": "maryland-department-health.png",
+    "class": ""
   },
   {
     "client": "FEMA",
-    "image": "fema.png"
+    "image": "fema.png",
+    "class": ""
   },
   {
     "client": "Robert Wood Johnson Foundation",
-    "image": "robert-wood-johnson-foundation.png"
+    "image": "robert-wood-johnson-foundation.png",
+    "class": ""
   },
   {
     "client": "Montgomery County, MD",
-    "image": "montgomery-county-maryland.png"
+    "image": "montgomery-county-maryland.png",
+    "class": "oversized"
   },
   {
     "client": "Regional Addiction Prevention, Inc.",
-    "image": "RAP-logo.png"
+    "image": "RAP-logo.png",
+    "class": "oversized"
   }
 ]
