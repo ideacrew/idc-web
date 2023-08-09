@@ -16,8 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tinacms/cli": "^1.5.24",
-    "tinacms": "^1.5.13"
+    "@tinacms/cli": "^1.5.22",
+    "tinacms": "^1.5.16"
   },
   "devDependencies": {
     "netlify-cli": "^15.8.1",
