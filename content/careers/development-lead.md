@@ -3,10 +3,10 @@ base_salary: 100000
 location: ["Washington, DC", "Remote"]
 maximum_salary: 180000
 position_type: "Full Time"
-draft: false
 post_date: 2022-02-12T00:00:00Z
 summary: "IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing development team."
 title: "Development Lead"
+draft: true
 ---
 
 IdeaCrew is currently seeking a Development Lead to join our fast-paced, growing development team. This individual will lead implementation of technical solutions across multiple software teams. You will work closely with the Chief Architect to define strategy and technical goals across clients and projects, and ensure teams are building to a cohesive vision.

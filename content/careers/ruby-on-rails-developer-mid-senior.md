@@ -5,12 +5,12 @@ summary: >-
   IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to
   join our innovative, hard-working team.
 post_date: 2024-01-05T06:00:00.000Z
-draft: false
 base_salary: 70000
 maximum_salary: 150000
 location:
   - "Washington, DC"
   - Remote
+draft: false
 ---
 
 IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to join our innovative, hard-working team as we disrupt healthcare technology.
