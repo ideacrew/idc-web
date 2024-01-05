@@ -3,6 +3,13 @@ import type { TinaField } from "tinacms";
 export function careerFields() {
   return [
     {
+      name: "draft",
+      label: "Draft",
+      type: "boolean",
+      required: true,
+      description: "If this is checked the post will not be published",
+    },
+    {
       type: "string",
       name: "title",
       label: "Title",
