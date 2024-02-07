@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: People Operations Manager
 position_type: Full Time
 summary: |-
@@ -12,10 +12,10 @@ base_salary: 60000
 maximum_salary: 80000
 location:
   - Mostly Remote
-  - 'Washington, D.C.'
+  - 'Washington, DC'
 ---
 
-## A People Operations Manager for IdeaCrew will:
+### A People Operations Manager for IdeaCrew will:
 
 * Assists payroll department in management and execution of timely
   payroll and ACH payments.
@@ -61,7 +61,7 @@ location:
   equipment replacement, replenishment, and maintenance.
 * Other duties as assigned.
 
-## Desired Skills & Expertise
+### Desired Skills & Expertise
 
 * Bachelor Degree in Human Resources, Business Management or
   related field.
