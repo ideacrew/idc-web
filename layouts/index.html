@@ -93,7 +93,7 @@
   <section class="recent-work-section">
     <h2 class="work-section-heading">Our Work</h2>
     <ul class="work-list">
-      {{ range first 4 (where .Site.RegularPages "Section" "work") }}
+      {{ range first 4 (where (where .Site.RegularPages "Section" "work") "Draft" "!=" true) }}
         {{ partial
           "work-item" .
         }}
