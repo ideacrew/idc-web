@@ -16,12 +16,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tinacms/cli": "^1.5.33",
-    "tinacms": "^1.5.24"
+    "@tinacms/cli": "^1.6.3",
+    "tinacms": "^2.2.3"
   },
   "devDependencies": {
-    "@types/node": "^20.10.6",
-    "netlify-cli": "^16.2.0",
+    "@types/node": "^22.5.4",
+    "netlify-cli": "^17.36.0",
     "prettier": "3.3.3",
     "prettier-plugin-go-template": "0.0.15"
   }
