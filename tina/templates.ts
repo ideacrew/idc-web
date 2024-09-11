@@ -88,6 +88,13 @@ export function newsFields() {
 export function workFields() {
   return [
     {
+      name: "draft",
+      label: "Draft",
+      type: "boolean",
+      required: false,
+      description: "If this is checked the work will not be published",
+    },
+    {
       type: "string",
       name: "title",
       label: "Title",
