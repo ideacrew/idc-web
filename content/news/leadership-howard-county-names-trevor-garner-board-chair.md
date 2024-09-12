@@ -2,7 +2,6 @@
 author: ""
 canonicalUrl: >-
   https://www.citybiz.co/article/288538/leadership-howard-county-names-trevor-garner-board-chair/
-publishdate: 2022-07-23T05:00:00.000Z
 title: Leadership Howard County Names Trevor Garner Board Chair
 ---
 

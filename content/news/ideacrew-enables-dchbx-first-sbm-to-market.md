@@ -1,7 +1,6 @@
 ---
 author: "Simon Henry"
 canonicalUrl: "https://gcn.com/cloud-infrastructure/2021/07/dc-pivots-for-rescue-plans-health-benefits-changes/315608/"
-publishdate: 2022-07-08T16:00:00Z
 title: "IdeaCrew enables DCHBX to be the first SBE to Go to Market, address the 2021 American Rescue Plan, & deliver DC resident savings"
 ---
 
