@@ -75,7 +75,7 @@ export function newsFields() {
       type: "datetime",
       name: "publishdate",
       label: "Publish date",
-      required: true,
+      required: false,
     },
     {
       type: "string",
