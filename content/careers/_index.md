@@ -5,7 +5,7 @@ description: If you’re looking for a company that works where technology touch
 
 ## Benefits
 
-We offer a flexible work environment, a competitive benefits package including medical, dental and vision insurance, life insurance, and 401k matching. The company observes nine paid holidays, provides paid time off for bereavement and jury duty, and offers a generous vacation allowance.
+We offer a flexible work environment, a competitive benefits package including medical, dental and vision insurance, life insurance, and 401k matching. The company observes ten paid holidays, provides paid time off for bereavement and jury duty, and offers a generous vacation allowance.
 
 Our headquarters are located in Washington, DC. We have an “IT casual” dress code, enjoy social events, team builders, and a commitment to helping our organization continue to evolve.
 
