@@ -20,3 +20,11 @@ content:
       - { name: title, label: Title, type: string }
       - { name: description, label: Description, type: text }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
+  - name: state-based-marketplace
+    label: SBM Page
+    type: file
+    path: content/state-based-marketplace.md
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Description, type: text }
+      - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
