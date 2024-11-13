@@ -17,8 +17,8 @@ content:
   - name: about
     label: About page
     type: file
-    path: src/pages/about.md
+    path: about.md
     fields:
-      - { name: layout, type: string, hidden: true, default: layouts/base.njk }
       - { name: title, label: Title, type: string }
+      - { name: description, label: Description, type: text }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
