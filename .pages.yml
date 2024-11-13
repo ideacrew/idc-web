@@ -1,6 +1,4 @@
-media:
-  input: public
-  output: /
+media: static/images
 content:
   - name: news
     label: News
