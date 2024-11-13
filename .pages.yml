@@ -20,7 +20,17 @@ content:
       fields: [ title, draft, date ]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - { name: position, label: Position Type, type: select, options: {[ tech, News, Sports]}}
+      - name: position
+        label: Position Type
+        type: select
+        options: 
+          values:
+          - value: ft
+            label: Full Time
+          - value: pt
+            label: Part Time
+          - value: ct
+            label: Contract
       - { name: post_date, label: Posted Date, type: date, required: true }
       - { name: base_salary, label: Base Salary, type: number }
       - { name: maximum_salary, label: Max Salary, type: number }
