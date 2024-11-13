@@ -2,8 +2,8 @@ media:
   input: public
   output: /
 content:
-  - name: posts
-    label: Posts
+  - name: news
+    label: News
     type: collection
     path: content/news
     view:
