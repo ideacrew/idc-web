@@ -1,5 +1,5 @@
 ---
-problem: "The District of Columbia’s expensive commercial-off-the-shelf (COTS) software failed after implementation during its first renewal period in 2014."
+problem: "The District of Columbia’s expensive commercial-off-the-shelf (COTS) plan shopping and enrollment software failed after implementation during its first renewal period in 2014."
 solution: "IdeaCrew re-implemented the District’s state-based marketplace using open standards and cloud technology to quickly become one of the leading and most financially sustainable platforms in the nation."
 quote: "The SHOP system IdeaCrew delivered exceeded our expectations…The online marketplace is easy for customers to use. Feedback from enrolled businesses and their workers, brokers, and our congressional customers is very positive."
 quote_attribution: "Mila Kofman, DCHBX Executive Director"
