@@ -4,7 +4,7 @@ position_type: Full Time
 summary: >-
   IdeaCrew is currently seeking Delivery Manager to
   join our innovative, hard-working team.
-post_date: 2024-01-24T06:00:00.000Z
+post_date: 2025-01-24T06:00:00.000Z
 base_salary: 100000
 maximum_salary: 120000
 location:
