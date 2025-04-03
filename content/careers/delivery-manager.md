@@ -9,7 +9,7 @@ base_salary: 100000
 maximum_salary: 120000
 location:
   - Remote
-draft: false
+draft: true
 ---
 
 IdeaCrew is currently seeking Delivery Manager to join our innovative, hard-working team as we disrupt healthcare technology.
