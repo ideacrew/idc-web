@@ -45,8 +45,11 @@
   <section>
     <h2>Job Details</h2>
     {{ .Content }}
+
+    {{ if .Params.base_salary }}
     <h3>Salary</h3>
     <p>${{ .Params.base_salary }} to ${{ .Params.maximum_salary }} per year</p>
+    {{ end }}
   </section>
   <section>
     <a
