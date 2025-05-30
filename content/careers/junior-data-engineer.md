@@ -5,8 +5,8 @@ summary: >-
   IdeaCrew is currently seeking junior Data Engineers to
   join our innovative, hard-working team.
 post_date: 2025-05-30T06:00:00.000Z
-# base_salary: 70000
-# maximum_salary: 150000
+base_salary: 90000
+maximum_salary: 110000
 location:
   - "Washington, DC"
   - Remote
