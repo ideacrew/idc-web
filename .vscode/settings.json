@@ -1,5 +1,6 @@
 {
-	"cSpell.words": ["CLIENTID", "prestart", "stopword", "tinacms"],
-	"svg.preview.background": "white",
-	"html.validate.styles": false
+  "cSpell.words": ["CLIENTID", "prestart", "stopword", "tinacms"],
+  "svg.preview.background": "white",
+  "html.validate.styles": false,
+  "postman.settings.dotenv-detection-notification-visibility": false
 }
