@@ -1,5 +1,5 @@
 ---
-title: "Ruby on Rails Developer (mid, senior)"
+title: "Ruby on Rails Developer"
 position_type: Full Time
 summary: >-
   IdeaCrew is currently seeking senior and mid-level Ruby on Rails Developers to
